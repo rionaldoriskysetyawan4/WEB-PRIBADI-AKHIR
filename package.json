@@ -1,13 +1,16 @@
 {
-  "name": "my-project",
+  "name": "web-prib",
   "version": "1.0.0",
+  "description": "To  make a profesional website private",
   "main": "index.js",
   "scripts": {
-    "start": "cd server && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "RRS",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1",
+    "nodemon": "^3.1.10"
+  }
 }
