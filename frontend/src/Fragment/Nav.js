@@ -10,7 +10,7 @@ const Nav = () => {
                 <li>PortFolio</li>
                 <li>Skills</li>
                 <li>Blog</li>
-                <li>About Me</li>
+                <li>About</li>
             </ul>
         </div>
     )
