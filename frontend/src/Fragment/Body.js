@@ -14,8 +14,8 @@ const Body = () => {
 
                 {/* Dot pattern 2 */}
                 <div className="dot-pattern dot6" style={{ top: '900px', left: '8%' }}></div>
-                <div className="dot-pattern dot2" style={{ top: '1100px', right: '35%' }}></div>
-                <div className="dot-pattern dot1" style={{ top: '1200px', left: '10%' }}></div>
+                <div className="dot-pattern dot7" style={{ top: '1100px', right: '-5%' }}></div>
+                <div className="dot-pattern dot1" style={{ top: '1550px', left: '0%' }}></div>
             </div>
         </div>
     );

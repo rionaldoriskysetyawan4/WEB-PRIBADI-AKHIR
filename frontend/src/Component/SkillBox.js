@@ -7,6 +7,7 @@ const SkillBox = ({ skill }) => {
                 <div className="skill-icon">
                     <img src={skill.icon} alt={`${skill.name} icon`} />
                 </div>
+                <h1 className="skill-name">{skill.name}</h1>
                 <p className="skill-description">{skill.description}</p>
             </div>
         </div>

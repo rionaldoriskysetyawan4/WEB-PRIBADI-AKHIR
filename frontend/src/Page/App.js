@@ -6,6 +6,7 @@ import Layout from '../Component/Title';
 import Body from '../Fragment/Body';
 import ImgHum from '../Component/Human';
 import TextProf from '../Component/TextProf';
+import MyButton from 'Component/Button';
 
 function App() {
   return (
@@ -20,16 +21,55 @@ function App() {
         <div className="content2">
           <div className="containerImage-Prof">
             <ImgHum className="ImageHum2" />
-            <TextProf />  
+            <div className="containerText-Prof">
+              <TextProf />
+              <div className="button-container">
+                <MyButton
+                  label="Download CV"
+                  className="myButton-CV"
+                  onClick={() => window.open('/cv.pdf', '_blank')}
+                />
+
+                <MyButton
+                  label="Blog"
+                  className="myButton-Blog"
+                  onClick={() => window.location.href = '/blog'}
+                />
+
+              </div>
+
+
+            </div>
+
           </div>
-                  <SkillBox
-          skill={{
-            name: 'JavaScript',
-            icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-            description:
-              'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
-          }}
-        />
+          <div className="containerTitle">
+            <SkillBox
+            skill={{
+              name: 'Software Engineer',
+              icon: '/Code.png', // HANYA ini, tanpa '/frontend/public'
+              description:
+                'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+            }}
+          />
+                    <SkillBox
+            skill={{
+              name: '3D Designer',
+              icon: '/Cube.png', // HANYA ini, tanpa '/frontend/public'
+              description:
+                'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+            }}
+          />
+                    <SkillBox
+            skill={{
+              name: 'IoT Enthusiast',
+              icon: '/Iot.png', // HANYA ini, tanpa '/frontend/public'
+              description:
+                'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+            }}
+          />
+
+          </div>
+          
 
         </div>
 
