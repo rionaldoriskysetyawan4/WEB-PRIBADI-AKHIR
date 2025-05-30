@@ -7,20 +7,21 @@ import Body from '../Fragment/Body';
 function App() {
   return (
     <div className="app">
-            <Body /> 
+      <Body /> 
       <Nav />
 
       
       <div className="content">
         <TextHome />
-        <SkillBox
+        
+        {/* <SkillBox
           skill={{
             name: 'JavaScript',
             icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
             description:
               'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
           }}
-        />
+        /> */}
       </div>
 
     </div>
