@@ -7,12 +7,17 @@ import Body from '../Fragment/Body';
 import ImgHum from '../Component/Human';
 import TextProf from '../Component/TextProf';
 import MyButton from 'Component/Button';
+import GaleriBox from 'Component/Galery';
+import Foot from 'Fragment/Footer';
+import Footer from 'Fragment/Footer';
 
 function App() {
   return (
     <div className="app">
       <Body />
-      <Nav />
+      <div className="navWrapper">
+              <Nav />
+      </div>
       <div className="content">
         <div className="containerImage-Home">
           <TextHome />
@@ -29,54 +34,124 @@ function App() {
                   className="myButton-CV"
                   onClick={() => window.open('/cv.pdf', '_blank')}
                 />
-
                 <MyButton
                   label="Blog"
                   className="myButton-Blog"
                   onClick={() => window.location.href = '/blog'}
                 />
-
               </div>
-
-
             </div>
-
           </div>
           <div className="containerTitle">
             <SkillBox
-            skill={{
-              name: 'Software Engineer',
-              icon: '/Code.png', // HANYA ini, tanpa '/frontend/public'
-              description:
-                'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
-            }}
-          />
-                    <SkillBox
-            skill={{
-              name: '3D Designer',
-              icon: '/Cube.png', // HANYA ini, tanpa '/frontend/public'
-              description:
-                'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
-            }}
-          />
-                    <SkillBox
-            skill={{
-              name: 'IoT Enthusiast',
-              icon: '/Iot.png', // HANYA ini, tanpa '/frontend/public'
-              description:
-                'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
-            }}
-          />
-
+              skill={{
+                name: 'Software Engineer',
+                icon: '/Code.png', // HANYA ini, tanpa '/frontend/public'
+                description:
+                  'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+              }}
+            />
+            <SkillBox
+              skill={{
+                name: '3D Designer',
+                icon: '/Cube.png', // HANYA ini, tanpa '/frontend/public'
+                description:
+                  'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+              }}
+            />
+            <SkillBox
+              skill={{
+                name: 'IoT Enthusiast',
+                icon: '/Iot.png', // HANYA ini, tanpa '/frontend/public'
+                description:
+                  'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+              }}
+            />
           </div>
-          
-
+          <div className="containerBox-Galery">
+            <div className="container-Galery">
+              <GaleriBox
+                Galery={{
+                  name: 'Galeri',
+                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
+                  description:
+                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+                }}
+              />
+              <GaleriBox
+                Galery={{
+                  name: 'Galeri',
+                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
+                  description:
+                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+                }}
+              />
+              <GaleriBox
+                Galery={{
+                  name: 'Galeri',
+                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
+                  description:
+                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+                }}
+              />
+            </div>
+            <div className="container-Galery">
+              <GaleriBox
+                Galery={{
+                  name: 'Galeri',
+                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
+                  description:
+                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+                }}
+              />
+              <GaleriBox
+                Galery={{
+                  name: 'Galeri',
+                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
+                  description:
+                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+                }}
+              />
+              <GaleriBox
+                Galery={{
+                  name: 'Galeri',
+                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
+                  description:
+                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+                }}
+              />
+            </div>
+            <div className="container-Galery">
+              <GaleriBox
+                Galery={{
+                  name: 'Galeri',
+                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
+                  description:
+                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+                }}
+              />
+              <GaleriBox
+                Galery={{
+                  name: 'Galeri',
+                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
+                  description:
+                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+                }}
+              />
+              <GaleriBox
+                Galery={{
+                  name: 'Galeri',
+                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
+                  description:
+                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
+                }}
+              />
+            </div>
+          </div>
         </div>
-
-
-
-
-
+      </div>
+      <div className="containerFooter">
+              <Footer />
       </div>
 
     </div>
