@@ -2,13 +2,11 @@ import SkillBox from '../Component/SkillBox';
 import Nav from '../Fragment/Nav';
 import '../Style/main.css';
 import TextHome from '../Component/TextHome';
-import Layout from '../Component/Title';
 import Body from '../Fragment/Body';
 import ImgHum from '../Component/Human';
 import TextProf from '../Component/TextProf';
 import MyButton from 'Component/Button';
 import GaleriBox from 'Component/Galery';
-import Foot from 'Fragment/Footer';
 import Footer from 'Fragment/Footer';
 
 function App() {
