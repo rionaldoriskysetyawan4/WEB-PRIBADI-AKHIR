@@ -8,13 +8,14 @@ import TextProf from '../Component/TextProf';
 import MyButton from 'Component/Button';
 import GaleriBox from 'Component/Galery';
 import Footer from 'Fragment/Footer';
+import { galeriData } from '../Data/data';
 
 function App() {
   return (
     <div className="app">
       <Body />
       <div className="navWrapper">
-              <Nav />
+        <Nav />
       </div>
       <div className="content">
         <div className="containerImage-Home">
@@ -67,89 +68,22 @@ function App() {
             />
           </div>
           <div className="containerBox-Galery">
-            <div className="container-Galery">
-              <GaleriBox
-                Galery={{
-                  name: 'Galeri',
-                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
-                  description:
-                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
-                }}
-              />
-              <GaleriBox
-                Galery={{
-                  name: 'Galeri',
-                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
-                  description:
-                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
-                }}
-              />
-              <GaleriBox
-                Galery={{
-                  name: 'Galeri',
-                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
-                  description:
-                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
-                }}
-              />
-            </div>
-            <div className="container-Galery">
-              <GaleriBox
-                Galery={{
-                  name: 'Galeri',
-                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
-                  description:
-                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
-                }}
-              />
-              <GaleriBox
-                Galery={{
-                  name: 'Galeri',
-                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
-                  description:
-                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
-                }}
-              />
-              <GaleriBox
-                Galery={{
-                  name: 'Galeri',
-                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
-                  description:
-                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
-                }}
-              />
-            </div>
-            <div className="container-Galery">
-              <GaleriBox
-                Galery={{
-                  name: 'Galeri',
-                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
-                  description:
-                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
-                }}
-              />
-              <GaleriBox
-                Galery={{
-                  name: 'Galeri',
-                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
-                  description:
-                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
-                }}
-              />
-              <GaleriBox
-                Galery={{
-                  name: 'Galeri',
-                  icon: '/favicon.ico', // HANYA ini, tanpa '/frontend/public'
-                  description:
-                    'JavaScript is a versatile programming language used for web development, enabling interactive and dynamic content on websites.',
-                }}
-              />
-            </div>
+            {[1, 2, 3].map((row) => (
+              <div
+                key={row}
+                className={row === 3 ? "container-Galery3" : "container-Galery"}
+              >
+                {galeriData.map((item, index) => (
+                  <GaleriBox Galery={item} key={index} />
+                ))}
+              </div>
+            ))}
           </div>
+
         </div>
       </div>
       <div className="containerFooter">
-              <Footer />
+        <Footer />
       </div>
 
     </div>
