@@ -442,14 +442,6 @@ body {
     font-size: 24px;
 }
 
-.text-prof-line {
-    font-size: 12px;
-}
-
-.text-prof-description {
-    font-size: 10px;
-}
-
 .footer-Search-Input-Field {
     width: 250px;
     height: 30px;
@@ -499,10 +491,19 @@ body {
 /* responsif untuk layar kecil */
 @media (max-width: 600px) {
 
+    .text-prof-line {
+        font-size: 12px;
+    }
+
+    .text-prof-description {
+        font-size: 10px;
+    }
+
     .container-skill-box {
         display: none;
     }
-    .container-Galery3{
+
+    .container-Galery3 {
         display: none;
     }
 
@@ -528,11 +529,13 @@ body {
         height: 140px;
         padding-top: 10px
     }
-    .Img-icon{
+
+    .Img-icon {
         width: 20px;
         height: 20px;
     }
-    .Galery-description{
+
+    .Galery-description {
         font-size: 10px;
         width: 100px;
         height: 80px;
