@@ -6,7 +6,7 @@ const Body = () => {
         <div className="body-wrapper">
             <div className="dot-container">
                 <div className="dot-pattern dot1" style={{top: '0%', left: '-1.2%', transform: 'translate( -22%, -22%)'}}></div>
-                <div className="dot-pattern dot2" style={{top: '13%', right: '5%',}}></div>
+                {/* <div className="dot-pattern dot2" style={{top: '13%', right: '5%',}}></div> */}
                 <div className="dot-pattern dot3" style={{top: '27.5%'}}></div>
                 <div className="dot-pattern dot4" style={{top: '34.5%', left: '9%'}}></div>
                 {/*  */}
