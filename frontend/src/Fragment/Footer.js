@@ -9,8 +9,8 @@ const Footer = () => {
             <div className="footer-Contact">
                 <h1 className="footer-Contact-Us">Contact Us</h1>
                 <div className="footer-Contact-Us-Desc">
-                    <h4>rionaldoriskysetyawan4@gmail.com</h4>
-                    <p>Jl. Raya Aura Sri No. 123, Jakarta</p>
+                    <p>rionaldoriskysetyawan4@gmail.com</p>
+                    <p className="footer-addres">Jl.Aura Raya No.12, Jakarta</p>
                     <p>See on Map</p>
                 </div>
             </div>

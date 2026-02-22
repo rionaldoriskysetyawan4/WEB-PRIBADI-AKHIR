@@ -5,24 +5,27 @@ const Body = () => {
     return (
         <div className="body-wrapper">
             <div className="dot-container">
-                {/* Dot pattern atas */}
-                <div className="dot-pattern dot1" style={{ top: '-15px', left: '-50px' }}></div>
-                <div className="dot-pattern dot2" style={{ top: '150px', right: '500px' }}></div>
-                <div className="dot-pattern dot3"></div>
-                <div className="dot-pattern dot5"></div>
-                <div className="dot-pattern dot4"></div>
-                <div className="dot-pattern dot2" style={{ top: '550px', left: '500px' }}></div>
+                <div className="dot-pattern dot1" style={{top: '0%', left: '-1.2%', transform: 'translate( -22%, -22%)'}}></div>
+                <div className="dot-pattern dot2" style={{top: '13%', right: '5%',}}></div>
+                <div className="dot-pattern dot3" style={{top: '27.5%'}}></div>
+                <div className="dot-pattern dot4" style={{top: '34.5%', left: '9%'}}></div>
+                {/*  */}
+                <div className="dot-pattern dot9" style={{top: '8%', right: '35%'}}></div>
+                <div className="dot-pattern dot5" style={{top: '15%', left: '8%'}}></div>
+                <div className="dot-pattern dot8" style={{top: '18%', left: '35%'}}></div>
+                {/*  */}
+                <div className="dot-pattern dot6" style={{top: '40%', right: '-8%'}}></div>
+                <div className="dot-pattern dot5" style={{bottom: '34%'}}></div>
+                <div className="dot-pattern dot6" style={{bottom: '3%', left: '-8%'}}></div>
+                <div className="dot-pattern dot5" style={{bottom: '25%', right: '-8%'}}></div>
+                {/* Untuk test */}
+                {/* <div className="dot-pattern dot5" style={{bottom: '0%', right: '0%'}}></div> */}
 
-                <div className="background-layer" style={{ top: '750px'}}></div>
-
-                <div className='Bc-Secondary'></div>
-                <div className="dot-pattern dot6" style={{ top: '900px', left: '8%' }}></div>
-                <div className="dot-pattern dot7" style={{ top: '1100px', right: '-5%' }}></div>
-                <div className="dot-pattern dot1" style={{ top: '1550px', left: '0%' }}></div>
+                <div className="background-layer" style={{ top: '29%', width: '100%', height: '35%' }}></div>
 
                 <Vector />
-                <div className="dot-pattern dot6" style={{ top: '2500px', left: '-8%' }}></div>
-                <div className="dot-pattern dot7" style={{ top: '1900px', right: '-5%' }}></div>
+                {/* <div className="dot-pattern dot6" style={{ top: '2500px', left: '-8%' }}></div> */}
+                {/* <div className="dot-pattern dot7" style={{ top: '1900px', right: '-5%' }}></div> */}
             </div>
 
 

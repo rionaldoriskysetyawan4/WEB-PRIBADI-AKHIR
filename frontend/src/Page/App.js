@@ -42,7 +42,7 @@ function App() {
             </div>
           </div>
           <div className="containerTitle">
-            <SkillBox
+            <SkillBox 
               skill={{
                 name: 'Software Engineer',
                 icon: '/Code.png', // HANYA ini, tanpa '/frontend/public'
