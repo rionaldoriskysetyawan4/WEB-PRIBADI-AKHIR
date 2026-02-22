@@ -29,7 +29,7 @@ const Body = () => {
             <div className="dot-container2">
                 <div className="dot-pattern dot1" style={{top: '5%', left: '-1.2%', transform: 'translate( -22%, -22%)'}}></div>
                 {/* <div className="dot-pattern dot2" style={{top: '13%', right: '5%',}}></div> */}
-                <div className="dot-pattern dot3" style={{top: '27.5%'}}></div>
+                {/* <div className="dot-pattern dot3" style={{top: '27.5%'}}></div> */}
                 <div className="dot-pattern dot4" style={{top: '34.5%', left: '9%'}}></div>
                 {/*  */}
                 <div className="dot-pattern dot9" style={{top: '8%', right: '35%'}}></div>
