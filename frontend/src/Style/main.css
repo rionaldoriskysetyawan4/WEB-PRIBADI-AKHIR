@@ -213,6 +213,9 @@ body {
     min-height: 2600px;
     /* atau sesuai panjang layout */
 }
+.dot-container2 {
+    display: none;
+}
 
 .dot-pattern {
     position: absolute;
