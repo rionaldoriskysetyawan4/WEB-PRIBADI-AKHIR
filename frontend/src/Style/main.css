@@ -192,11 +192,7 @@ body {
 
 }
 
-.background-layer1 {
-    position: absolute;
-    width: 100%;
-    background-color: var(--color-secondary);
-}
+
 
 .body-wrapper {
     position: absolute;
@@ -206,97 +202,134 @@ body {
     z-index: 2;
 }
 
-.dot-pattern2,
-.dot-container2 {
-    display: none;
-}
-
-
-/* Hanya tampilkan dot di area atas saja */
-.dot-container1 {
+.dot-container {
     position: relative;
     overflow: visible;
     min-height: 2600px;
-    /* atau sesuai panjang layout */
 }
 
-.dot-pattern1 {
+.dot-pattern {
     position: absolute;
-    width: 200px;
-    height: 200px;
     background-image: radial-gradient(white 1px, transparent 1px);
     background-size: 12px 12px;
     opacity: 0.8;
-    /* display: none; */
 }
 
-/* Dot variations tetap sama */
-.dot1,
-.dot2,
-.dot3,
-.dot4,
-.dot5,
-.dot6,
-.dot7,
-.dot8,
-.dot9 {
-    border-radius: 100%;
-    z-index: 2;
-}
-
-/* untuk logo */
 .dot1 {
     width: 130px;
     height: 130px;
+    border-radius: 100%;
 }
 
-/* untuk gambar */
 .dot2 {
     width: 450px;
     height: 450px;
+    border-radius: 100%;
 }
 
-/* untuk pemisah */
 .dot3 {
     width: 355px;
     height: 84px;
     border-radius: 0 25% 25% 0;
 }
 
-/* untuk gambar bawah */
 .dot4 {
     width: 280px;
     height: 280px;
+    border-radius: 100%;
 }
 
-/* kecil */
 .dot5 {
     width: 170px;
     height: 170px;
+    border-radius: 100%;
 }
 
-/* sedang */
 .dot6 {
     width: 240px;
     height: 240px;
+    border-radius: 100%;
 }
 
-/* besar */
 .dot7 {
-    width: 360px;
-    height: 360px;
+    width: 260px;
+    height: 260px;
+    border-radius: 100%;
 }
 
-/* super kecil */
 .dot8 {
     width: 120px;
     height: 120px;
+    border-radius: 100%;
 }
 
-/* nano */
 .dot9 {
     width: 72px;
     height: 72px;
+    border-radius: 100%;
+}
+
+.pos1 {
+    top: 0%;
+    left: -1.2%;
+    transform: translate(-22%, -22%);
+}
+
+.pos2 {
+    top: 13%;
+    right: 5%;
+}
+
+.pos3 {
+    top: 27.5%;
+}
+
+.pos4 {
+    top: 34.5%;
+    left: 9%;
+}
+
+.pos5 {
+    top: 8%;
+    right: 35%;
+}
+
+.pos6 {
+    top: 15%;
+    left: 8%;
+}
+
+.pos7 {
+    top: 18%;
+    left: 35%;
+}
+
+.pos8 {
+    top: 40%;
+    right: -8%;
+}
+
+.pos9 {
+    bottom: 34%;
+}
+
+.pos10 {
+    bottom: 3%;
+    left: -8%;
+}
+
+.pos11 {
+    bottom: 25%;
+    right: -8%;
+}
+
+.background-layer {
+    position: absolute;
+    top: 29%;
+    width: 100%;
+    height: 35%;
+    background-color: var(--color-secondary);
+    z-index: -1;
 }
 
 .Img-icon {
@@ -622,32 +655,121 @@ body {
     }
 
     /*  */
+    .dot-container {
+        position: relative;
+        min-height: 1000px;
+    }
 
-    .dot-pattern1,
-    .dot-container1 {
+    .dot1 {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+
+    .dot2 {
+        width: 170px;
+        height: 170px;
+        border-radius: 100%;
+    }
+
+    .dot3 {
+        width: 150px;
+        height: 34px;
+        border-radius: 0 25% 25% 0;
+        -webkit-border-radius: 0 25% 25% 0;
+        -moz-border-radius: 0 25% 25% 0;
+        -ms-border-radius: 0 25% 25% 0;
+        -o-border-radius: 0 25% 25% 0;
+    }
+
+    .dot4 {
+        display: none;
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }
+
+    .dot5 {
+        /* display: none; */
+        width: 58px;
+        height: 58px;
+        border-radius: 100%;
+    }
+
+    .dot6 {
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+    }
+
+    .dot7 {
+        width: 110px;
+        height: 110px;
+        border-radius: 100%;
+    }
+
+    .dot8 {
+        display: none;
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }
+
+    .dot9 {
+        display: none;
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        /* background-color: white; */
+    }
+
+    .pos2 {
+        top: 11%;
+        right: 2%;
+    }
+
+    .pos3 {
+        top: 24.2%;
+    }
+
+    .pos4 {
+        top: 30.5%;
+        left: 8%;
+    }
+    .pos6 {
+        display: none;
+    }
+    .pos8 {
+        display: none;
+        top: 32%;
+        right: -2%;
+    }
+    .pos9 {
+        top: 44%;
+    }
+    .pos10 {
+        bottom: 8%;
+        left: -10%;
+    }
+    .pos11 {
+        bottom: 28%;
+        right: -5%;
+    }
+
+    .line-wrapper {
         display: none;
     }
 
-    .dot-container2 {
-        position: relative;
-        overflow: visible;
-        min-height: 100px;
-    }
 
-    .dot-pattern2 {
+    .background-layer {
         position: absolute;
-        width: 100px;
-        height: 100px;
-        background-image: radial-gradient(white 1px, transparent 1px);
-        background-size: 12px 12px;
-        opacity: 0.8;
-    }
-
-    .background-layer2 {
-        position: absolute;
+        top: 26%;
         width: 100%;
+        height: 21%;
         background-color: var(--color-secondary);
+        z-index: -1;
     }
+
 
     .footer-Service {
         display: none;
