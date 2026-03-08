@@ -657,7 +657,7 @@ body {
     /*  */
     .dot-container {
         position: relative;
-        min-height: 1000px;
+        max-height: 420px;
     }
 
     .dot1 {
@@ -724,35 +724,30 @@ body {
     }
 
     .pos2 {
-        top: 11%;
+        top: 4%;
         right: 2%;
     }
 
     .pos3 {
-        top: 24.2%;
+        top: 9.3%;
     }
 
-    .pos4 {
-        top: 30.5%;
-        left: 8%;
-    }
     .pos6 {
         display: none;
     }
     .pos8 {
         display: none;
-        top: 32%;
-        right: -2%;
+
     }
     .pos9 {
-        top: 44%;
+        top: 17%;
     }
     .pos10 {
-        bottom: 8%;
-        left: -10%;
+        top: 31%;
+        left: -5%;
     }
     .pos11 {
-        bottom: 28%;
+        top: 25%;
         right: -5%;
     }
 
@@ -763,9 +758,9 @@ body {
 
     .background-layer {
         position: absolute;
-        top: 26%;
+        top: 10%;
         width: 100%;
-        height: 21%;
+        height: 8%;
         background-color: var(--color-secondary);
         z-index: -1;
     }
@@ -834,10 +829,165 @@ body {
 
 }
 
-/* Tablet
-@media (min-width: 760px) {
-    .dot-pattern {
-        display: none;
+@media (min-width: 480px) and (max-width: 1250px) {
+
+        .dot-container {
+        position: relative;
+        maxn-height: 1200px;
+    }
+
+    .dot1 {
+        width: 180px;
+        height: 180px;
+        border-radius: 100%;
+    }
+
+    .dot2 {
+        width: 350px;
+        height: 350px;
+        border-radius: 100%;
+    }
+
+    .dot3 {
+        width:290px;
+        height: 74px;
+        border-radius: 0 25% 25% 0;
+        -webkit-border-radius: 0 25% 25% 0;
+        -moz-border-radius: 0 25% 25% 0;
+        -ms-border-radius: 0 25% 25% 0;
+        -o-border-radius: 0 25% 25% 0;
+    }
+
+    .dot4 {
+        /* display: none; */
+        width: 220px;
+        height: 220px;
+        border-radius: 100%;
+    }
+
+    .dot5 {
+        /* display: none; */
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+    }
+
+    .dot6 {
+        width: 160px;
+        height: 160px;
+        border-radius: 100%;
+    }
+
+    .dot7 {
+        width: 190px;
+        height: 190px;
+        border-radius: 100%;
+    }
+
+    .dot8 {
+        /* display: none; */
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
+
+    .dot9 {
+        /* display: none; */
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        /* background-color: white; */
+    }
+
+    .pos1 {
+    top: -2%;
+    left: -5%;
+    transform: translate(-22%, -22%);
+}
+
+    .pos2 {
+        top: 5.5%;
+        right: 1%;
+    }
+
+    .pos3 {
+        top: 18.5%;
+    }
+
+    .pos4 {
+        top: 22.5%;
+        left: 7%;
+    }
+    .pos5 {
+        top: 5%;
+        right: 38%;
+    }
+    .pos6 {
+        top: 12%;
+        left: 7%;
+    }
+    .pos7 {
+        top: 14%;
+        left: 40%;
+    }
+    .pos8 {
+        top: 30%;
+    }
+    .pos9 {
+        top: 46%;
+    }
+    .pos10 {
+        top:67%;
+        left: -8%;
+    }
+    .pos11 {
+        top: 53%;
+        right: -5%;
+    }
+
+
+    .background-layer {
+        position: absolute;
+        top: 20.2%;
+        width: 100%;
+        height: 30%;
+        background-color: var(--color-secondary);
+        z-index: -1;
+    }
+
+    .ImageHum1 {
+    height: 350px;
+    width: 350px;
+    padding-top: 13.5%;
+    transform: translateX(5%);
+    z-index: 5;
+    -webkit-transform: translateX(5%);
+    -moz-transform: translateX(5%);
+    -ms-transform: translateX(5%);
+    -o-transform: translateX(5%);
+}
+
+    .ImageHum2 {
+        width: 240px;
+        height: 240px;
+        padding-top: 10px;
+    }
+    .text-home-container{
+        padding-top: 10%;
+    }
+
+    .text-home-description {
+        font-size: 1.2rem;
+    }
+    .text-home-line {
+        font-size: 2rem;
+    }
+    .text-home-name {
+        font-size: 2rem;
+    }
+
+    .container-skill-box {
+        height: 350px;
     }
 
     .footer-Service {
@@ -855,4 +1005,4 @@ body {
     .footer-Contact-Us-Desc {
         font-size: 95%;
     }
-} */
+} 
