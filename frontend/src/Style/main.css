@@ -428,9 +428,8 @@ body {
 }
 
 .vector-section {
-    position: absolute;
-    margin-top: 1800px;
-    /* Daripada pakai position: absolute */
+    position: relative; /* ganti ke relative */
+    margin-top: 0;
     width: 100%;
     text-align: center;
 }
@@ -1006,3 +1005,9 @@ body {
         font-size: 95%;
     }
 } 
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    .ImageHum1 {
+        margin-top: 5px;
+    }
+}
